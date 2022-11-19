@@ -60,7 +60,6 @@ function App() {
         const newDeleteItem = list.filter((item) => item.id !== id);
         setList(newDeleteItem);
         setName("");
-        alert("Bạn có muốn xóa công việc này không!");
     }
     const clearList = () => {
         setList([]);
@@ -96,7 +95,11 @@ function App() {
                     <>
                         <Lists nameItems={list} editItem={editItem} removeItem={removeItem} />
                         <div className='btn_clear'>
-                            <button type='button' className='btn btn-light' onClick={clearList}>Clear list</button>
+                            <button type='button' className='btn btn-light' onClick={() => {
+                                if (window.confirm("Bạn có muốn xóa hết danh sách không!")) {
+                                    clearList()
+                                }
+                            }}>Xóa hết danh sách</button>
                         </div>
                     </>
                 )}
