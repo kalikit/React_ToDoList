@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { ReactDOM } from 'react-dom/client';
-import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
 import './App.css';
 import axios from 'axios';
 import { data } from './data';
