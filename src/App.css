@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.title{
+    text-align: center;
+    color: blueviolet;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.input{
+    margin: 10px 10px 20px 10px;
+    
+}
+
+.btn_clear{
+    
+    margin-top: 20px;
+}
+@media (max-width: 575.98px) {
+    .main{
+        width: auto;
+        padding: 10px 0 20px 0;
+        margin: 0 auto;
+    }
+ }
+ @media (min-width: 576px) { 
+    .main{
+        border: 1px solid gray;
+        border-radius: 10px;
+        width: 600px;
+        padding: 10px 0 20px 0;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .show_list{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+ }
