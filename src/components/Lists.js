@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { data } from "../data";
 import '../css/Lists.css';
 
 const Lists = ({ nameItems, editItem, removeItem }) => {
