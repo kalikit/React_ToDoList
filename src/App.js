@@ -2,9 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ReactDOM } from 'react-dom/client';
 import './App.css';
 import axios from 'axios';
-import { data } from './data';
 import { Lists } from './components/Lists';
-import { Loading } from './components/Loading';
 
 const getLocalStorage = () => {
     let getList = localStorage.getItem('key_list');
